@@ -1,0 +1,6 @@
+---
+# template tasks file
+
+- name: debug
+  debug:
+    msg: "Welcome to ansible-role-kibana!"
