@@ -1,0 +1,14 @@
+---
+- name: Ensure dependencies are installed.
+  apt:
+    pkg:
+      - apt-transport-https
+      - gnupg2
+    state: present
+    update_cache: yes
+
+- name: Add Elasticsearch apt key.
+  apt_key:
+    url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    state: present
+

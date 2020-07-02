@@ -1,15 +1,32 @@
-galaxy_info:
-  author: University of Michigan UMNet
-  description: template for kibana Roles
-  company: University of Michigan
-  license: Apache 2.0
-
-  min_ansible_version: 2.5
-
-  platforms:
-    - name: Ubuntu
-
-  galaxy_tags:
-    - development
-
+---
 dependencies: []
+
+galaxy_info:
+  role_name: kibana
+  author: geerlingguy
+  description: Kibana for Linux.
+  company: "Midwestern Mac, LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Debian
+      versions:
+        - jessie
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+        - xenial
+  galaxy_tags:
+    - web
+    - system
+    - monitoring
+    - kibana
+    - elk
+    - efk
+    - logging
+    - dataviz
